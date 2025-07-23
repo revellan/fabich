@@ -131,12 +131,6 @@ fn fibonacci() {
             }
             a => {
                 let fib_index = a;
-                if fib_index == 0 {
-                    println!();
-                    process::exit(0);
-                } else if fib_index == 1 {
-                    break String::from("The first Fibonacci Number is: 1");
-                }
                 let mut fib_num: u64 = 1;
                 let mut prev_fib_num: u64 = 0;
                 let mut tmp_fib_num: u64;
