@@ -143,7 +143,13 @@ fn fibonacci() {
                 for _ in 3..=fib_index {
                     tmp_fib_num = prev_fib_num;
                     prev_fib_num = fib_num;
-                    fib_num += tmp_fib_num;
+                    fib_num = match (fib_num).checked_add(tmp_fib_num) {
+                        Some(nm) => nm,
+                        None => {
+                            println!("Overflow was prevented. Exiting...");
+                            process::exit(0);
+                        }
+                    }
                 }
                 break String::from(format!(
                     "The {}th Fibonacci Number is: {}",
