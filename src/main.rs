@@ -175,7 +175,10 @@ fn christmas_carol() {
         "A partridge in a pear tree",
     ];
     for i in 0..DAYS {
-        println!("\nOn the {} day of Christmas, my true love sent to me", days[i]);
+        println!(
+            "\nOn the {} day of Christmas, my true love sent to me",
+            days[i]
+        );
         for n in DAYS - (i + 1)..DAYS {
             println!("{}", lines[n]);
         }
