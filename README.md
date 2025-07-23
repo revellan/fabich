@@ -2,7 +2,7 @@
 
 The Programs you have to program at the end of Chapter 3 of the "The Rust Programming Language" Book
 
-##Installation:
+## Installation:
 ```sh
 #Clone the git repo
 sudo git clone https://github.com/revellan/fabich
@@ -15,7 +15,7 @@ make
 sudo make install
 ```
 
-##Uninstall:
+## Uninstall:
 ```sh
 sudo rm /usr/local/bin/fabich
 ```
